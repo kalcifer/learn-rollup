@@ -10,6 +10,8 @@ import addArray from './modules/mod2';
 import debug from 'debug';
 const log = debug('app:log');
 
+import chart from './modules/chart';
+
 // The logger should only be disabled if we’re not in production.
 if (ENV !== 'production') {
   // Enable the logger.
@@ -33,3 +35,4 @@ const printTarget = document.getElementsByClassName('debug__output')[0];
 
 printTarget.innerText = `sayHelloTo('Jason') => ${result1}\n\n`;
 printTarget.innerText += `addArray([1, 2, 3, 4]) => ${result2}`;
+chart();
