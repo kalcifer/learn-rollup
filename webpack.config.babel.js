@@ -20,6 +20,10 @@ export default {
         test: /\.js$/,
         loader: 'babel-loader',
         exclude: /node_modules/
+      },
+      {
+        test: /\.css$/,
+        loader: 'style!css!sass'
       }
     ]
   },
