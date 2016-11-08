@@ -1,6 +1,7 @@
 /*
  * PostCSS styles to test Rollup’s handling of them.
  */
+@import 'credits.css';
 
 /* Variables */
 $color-heading: #111;
@@ -61,15 +62,5 @@ h1 {
     /* The color() function works thanks to `postcss-cssnext`. */
     border: 1px solid color( $color-text tint(75%) );
     font-size: 80%;
-  }
-}
-
-.credits {
-  color: color( $color-text tint(50%) );
-  font-size: 75%;
-  text-align: center;
-
-  a {
-    color: inherit;
   }
 }

@@ -1,0 +1,9 @@
+.credits {
+  color: color( $color-text tint(50%) );
+  font-size: 75%;
+  text-align: center;
+
+  a {
+    color: inherit;
+  }
+}
